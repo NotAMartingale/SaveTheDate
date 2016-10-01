@@ -1,0 +1,356 @@
+#u980.PamphletThumbSelected,#u997.PamphletThumbSelected,#u963.PamphletThumbSelected,#u942.PamphletThumbSelected
+{
+	border-style: none;
+	border-color: transparent;
+}
+
+#u76
+{
+	-pie-box-shadow: none;
+	box-shadow: 0px 5px 6px rgba(0,0,0,0.1);
+	border-color: #C1272D;
+	background-color: #FFFFFF;
+	opacity: 0.95;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+	filter: alpha(opacity=95);
+	position: fixed;
+}
+
+#menuu84
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: fixed;
+}
+
+#u88
+{
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	border-width: 2px 0px 0px;
+}
+
+#u89-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+}
+
+#u103
+{
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	border-width: 2px 0px 0px;
+}
+
+#u106-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+}
+
+#u138
+{
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	border-width: 2px 0px 0px;
+}
+
+#u140-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+}
+
+#u112
+{
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	border-width: 2px 0px 0px;
+}
+
+#u114-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+}
+
+#u4020
+{
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	border-width: 2px 0px 0px;
+}
+
+#u4023-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+}
+
+#u85,#u102,#u137,#u109,#u4019,#u123
+{
+	background-color: transparent;
+	position: relative;
+}
+
+#u124
+{
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: transparent;
+	position: relative;
+	border-width: 2px 0px 0px;
+}
+
+#u88.MuseMenuActive,#u103.MuseMenuActive,#u138.MuseMenuActive,#u112.MuseMenuActive,#u4020.MuseMenuActive,#u124.MuseMenuActive
+{
+	border-color: #C69C6D;
+}
+
+#u126-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333333;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+}
+
+#u88.MuseMenuActive #u89-4 p,#u103.MuseMenuActive #u106-4 p,#u138.MuseMenuActive #u140-4 p,#u112.MuseMenuActive #u114-4 p,#u4020.MuseMenuActive #u4023-4 p,#u124.MuseMenuActive #u126-4 p
+{
+	font-weight: bold;
+}
+
+#u144-4
+{
+	background-color: transparent;
+	text-align: left;
+	font-size: 40px;
+	line-height: 48px;
+	color: #C69C6D;
+	font-family: rouge-script, cursive;
+	font-weight: 400;
+	position: fixed;
+}
+
+#u234,#u235,#u236
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #C69C6D;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	position: fixed;
+}
+
+#u916
+{
+	background-color: #333333;
+}
+
+#u1057-4
+{
+	background-color: transparent;
+	text-align: center;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+	font-family: rouge-script, cursive;
+	font-weight: 400;
+	position: relative;
+}
+
+#u919-4
+{
+	background-color: transparent;
+	text-align: center;
+	font-size: 48px;
+	letter-spacing: 1px;
+	line-height: 58px;
+	color: #C69C6D;
+	font-family: rouge-script, cursive;
+	font-weight: 400;
+	position: relative;
+}
+
+#u924-4
+{
+	background-color: transparent;
+	text-align: right;
+	font-size: 36px;
+	line-height: 43px;
+	color: #C69C6D;
+	font-family: rouge-script, cursive;
+	font-weight: 400;
+	position: relative;
+}
+
+#u921
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FF0000;
+	text-align: center;
+	font-size: 24px;
+	line-height: 29px;
+	position: relative;
+}
+
+#u923-4
+{
+	background-color: transparent;
+	text-align: left;
+	font-size: 36px;
+	line-height: 43px;
+	color: #C69C6D;
+	font-family: rouge-script, cursive;
+	font-weight: 400;
+	position: relative;
+}
+
+#u925-4
+{
+	background-color: transparent;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+	font-family: raleway, sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+
+.MenuItem,.PamphletWidget .ThumbGroup .Thumb,.PamphletNextButton,.PamphletPrevButton,.PamphletCloseButton /* unifiedNavBar */
+{
+	cursor: pointer;
+}
+
+#u927,#u969,#u986,#u1003
+{
+	position: absolute;
+	background-color: transparent;
+}
+
+#u932,#u974,#u991,#u1008
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #C69C6D;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	position: relative;
+}
+
+#u920,#u931,#u928,#u973,#u970,#u990,#u987,#u1007,#u1004
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u929,#u971,#u988,#u1005
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	position: relative;
+}
+
+#u916_align_to_page,#pamphletu926,#u940,#pamphletu961,#u962,#pamphletu978,#u979,#pamphletu995,#u996
+{
+	position: relative;
+}
+
+#u942,#u963,#u980,#u997
+{
+	position: absolute;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+#u942:hover,#u963:hover,#u980:hover,#u997:hover
+{
+	border-color: #999999;
+}
+
+#u941,#u964,#u981,#u998
+{
+	position: absolute;
+}
+
+#u1012
+{
+	border-style: solid;
+	border-color: #754C24;
+	background-color: transparent;
+	border-width: 1px 0px 0px;
+}
+
