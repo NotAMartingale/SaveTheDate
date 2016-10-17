@@ -3,67 +3,180 @@
 
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+     	<meta name="description" content="">
+      	<meta name="author" content="www.dethemes.com">
 
-<head>
+        <!-- Titulo -->
+        <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" href={%  static "images/flower.png  " %}/>
+        <link rel="icon" href={% static  "images/flower.png" %}>
+        <!-- Bootstrap -->
+    	<link rel="stylesheet" href={% static "css/bootstrap/bootstrap.min.css" %} type="text/css" media="screen" />
+        <!-- Pace -->
+        <link rel="stylesheet" href={% static "css/preloader.css" %} media="screen">
+        <link rel="stylesheet" href={% static "css/preloader-default.css" %}  media="screen">
+        <!-- Flexslider -->
+        <link rel="stylesheet" href={% static "css/flexslider/flexslider.css" %} type="text/css">
+        <!-- Animate -->
+        <link rel="stylesheet" href={% static "css/animate/animate.css" %} type="text/css">
+        <!-- Countdown -->
+        <link rel="stylesheet" href={% static "css/countdown/jquery.countdown.css" %} type="text/css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href={% static "css/magnific-popup/magnific-popup.css" %} type="text/css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href={% static "css/owlcarousel/owl.carousel.css" %} type="text/css">
+        <link rel="stylesheet" href={% static "css/owlcarousel/owl.theme.css" %} type="text/css">
+        <!-- Icon -->
+        <link rel="stylesheet" href={% static "css/fonts/fontello/css/fontello.css" %} type="text/css" media="screen" />
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <!-- Theme CSS -->
+    	<link href={% static "css/style.css" %} rel="stylesheet" media="screen">
+
+        <!-- Skin CSS -->
+    	<!-- <link href="css/skin/light-teal/light-teal.css" rel="stylesheet" media="screen"> -->
+        <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
+        <!-- <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen"> -->
 
 
 
-  <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
 
-  <!-- Boostrap -->
+	</head>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<body>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  <!-- CSS -->
-
-  <link rel="stylesheet" type="text/css" href="{% static 'css/savedate.css' %}">
-
-  {% block extra_css %}
-    {# Override this in templates to add extra stylesheets #}
-  {% endblock %}
-
-</head>
-
-
-    <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+    	<!--PRELOADER-->
+        <div id="preloader">
+
+        	<div class="alignment">
+            	<div class="v-align center-middle">
+
+                    <!-- LEFT HEART -->
+            		<div class="heart-animation">
+            			<i class="de-icon-heart"></i>
+               	 	</div>
+
+                	<!-- RIGHT HEART -->
+                	<div class="heart-animation-reverse">
+            			<i class="de-icon-heart"></i>
+                	</div>
+
+                </div>
+            </div>
+
+        </div> <!--END of PRELOADER-->
+
+        <!-- NAVIGATION -->
+    	<header id="nav-header">
+        	<nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
+
+                <div id="nav-wrapper">
+
+                    <!-- LOGO -->
+            		<div class="logo-wrapper">
+                		<!-- CSS LOGO -->
+                        <a href="/">
+                    		<div class="css-logo rounded">
+                   				<div class="css-logo-text">
+                        			<strong>J</strong><i class="de-icon-heart-1"></i><strong>C</strong>
+                    			</div>
+                    		</div>
+                        </a>
+
+                    	<!-- IMG LOGO
+                        <a href="index.html">
+                    		<div class="img-logo">
+                    			<img src="images/slide1.jpg">
+                    		</div>
+                        </a>
+                        -->
+                	</div>
+                	<!-- END of LOGO -->
+
+                    <div id="mobile-nav">
+                    	<i class="de-icon-menu"></i>
+                    </div>
+
+                	<ul id="nav-menu">
+                		<li class="first-child">
+                        	<a href="../">FECHA</a>
+                        </li>
+                        <li>
+                        	<a href="../galeria-de-fotos">GALERÍA</a>
+                        </li>
+
+                        <li class="first-child split-margin">
+                        	<a href="#">LA BODA</a>
+                             <ul>
+                             	<li><a href="../ceremonia">CEREMONIA</a></li>
+                                <li><a href="../recepcion">RECEPCIÓN</a></li>
+                                <li><a href="../lista-novios">LISTA NOVIOS</a></li>
+                            </ul>
+                        </li>
+                    	<li>
+                        	<a href="/confirmacion">CONFIRMAR</a>
+                        </li>
+                	</ul>
+                    <div class="clearboth"></div>
+                </div>
+
+            </nav>
+        </header> <!-- END of NAVIGATION -->
 
         {% block content %}{% endblock %}
 
+		<!-- jQuery -->
+    	<script src={%  static  "js/jquery-1.11.1.min.js" %}></script>
+        <!-- Pace -->
+        <script src={%  static  "js/pace/pace.min.js" %}></script>
+    	<!-- Bootstrap -->
+    	<script src={%  static  "js/bootstrap/bootstrap.js" %}></script>
+        <!-- Modernizr -->
+        <script src={%  static  "js/modernizr/modernizr.js" %}></script>
+        <!-- Device JS -->
+        <script src={%  static  "js/devicejs/device.js" %}></script>
+        <!-- TinyNav -->
+        <script src={%  static  "js/tinynav/tinynav.min.js" %}></script>
+        <!-- SmoothScroll -->
+        <script src={%  static  "js/smoothscroll/jquery.smooth-scroll.js" %}></script>
+        <!-- Flexslider -->
+        <script src={%  static  "js/flexslider/jquery.flexslider.js" %}></script>
+        <!-- Sticky -->
+        <script src={%  static  "js/sticky/jquery.sticky.js" %}></script>
+        <!-- Waypoint -->
+        <script src={%  static  "js/waypoint/jquery.waypoints.min.js" %}></script>
+        <!-- DoubleTapToGo -->
+        <script src={%  static  "js/jquery-ui-widget/jquery.ui.widget.js" %}></script>
+        <script src={%  static  "js/jquery-doubletaptogo/jquery.dcd.doubletaptogo.js" %}></script>
+        <!-- Vide -->
+        <script src={%  static  "js/vide/jquery.vide.js" %}></script>
+        <!-- Stellar -->
+        <script src={%  static  "js/stellar/jquery.stellar.js" %}></script>
+        <!-- Masonry -->
+        <script src={%  static  "js/masonry/masonry.pkgd.min.js" %}></script>
+        <!-- Countdown -->
+        <script src={%  static  "js/countdown/jquery.plugin.js" %}></script>
+        <script src={%  static  "js/countdown/jquery.countdown.js" %}></script>
+        <!-- Countdown Labels / Localisation -->
+        <script src={%  static  "js/countdown/jquery.countdown-custom-label.js" %}></script>
+        <!-- Magnific Popup -->
+        <script src={%  static  "js/magnific-popup/jquery.magnific-popup.js" %}></script>
+        <!-- Owl Carousel -->
+        <script src={%  static  "js/owlcarousel/owl.carousel.js" %}></script>
 
-        {% block extra_js %}
-            {# Override this in templates to add extra javascript #}
-        {% endblock %}
+        <!-- Custom Core Script -->
+        <script type="text/javascript" src={%  static  "js/script.js" %}></script>
+        <!-- Custom Additional Script -->
+        <script type="text/javascript" src={%  static  "js/main-slider-fade.js" %}></script>
 
-
-        <!-- Bootstrap core JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-
-
-    </body>
-
-
-
+	</body>
 
 </html>

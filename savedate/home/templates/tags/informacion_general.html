@@ -1,0 +1,142 @@
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+<div class="row">
+
+    <div class="col-md-offset-1 col-md-10">
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- ITEM-1 -->
+                <div class="wedding-item col-md-4 animation fadeIn">
+
+                    <!--PHOTO-ITEM-->
+                    <div class="photo-item">
+
+                        <!--PHOTO-->
+
+                        {% image ceremonia.foto width-290 class="hover-animation image-zoom-in"  %}
+
+                        <!--PHOTO OVERLAY-->
+                        <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
+                        </div><!--END of PHOTO OVERLAY-->
+
+                        <div class="layer wh95 border-photo-caption fade-out">
+                        </div><!--END of PHOTO CAPTION-->
+
+                        <!--ICON LINK-->
+                        <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                            <div class="alignment">
+                                <div class="v-align center-middle">
+
+                                    <a href="../ceremonia" class="de-button outline small">
+                                        DIRECCIÓN
+                                    </a>
+
+                                </div>
+                            </div>
+                            </div><!--END of ICON LINK-->
+
+                    </div><!--END of PHOTO-ITEM-->
+
+                    <!-- TITLE & EXCERPT -->
+                    <div class="title-excerpt">
+                        <h3><a href="../ceremonia">CEREMONIA</a></h3>
+                        {{ ceremonia.descripcion |richtext }}
+                    </div>
+                    <!-- END of TITLE & EXCERPT -->
+
+                </div><!-- END of ITEM-1 -->
+
+
+                <!-- ITEM-2 -->
+                <div class="wedding-item col-md-4 animation delay1 fadeIn">
+
+                    <!--PHOTO-ITEM-->
+                    <div class="photo-item">
+
+                        <!--PHOTO-->
+                        {% image recepcion.foto width-290 class="hover-animation image-zoom-in"  %}
+
+                        <!--PHOTO OVERLAY-->
+                        <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
+                        </div><!--END of PHOTO OVERLAY-->
+
+                         <div class="layer wh95 border-photo-caption fade-out">
+
+                        </div><!--END of PHOTO CAPTION-->
+
+                        <!--ICON LINK-->
+                        <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                            <div class="alignment">
+                                <div class="v-align center-middle">
+
+                                    <a href="../recepcion" class="de-button outline small">
+                                        DIRECCIÓN
+                                    </a>
+
+                                </div>
+                            </div>
+                            </div><!--END of ICON LINK-->
+
+                    </div><!--END of PHOTO-ITEM-->
+
+                    <!-- TITLE & EXCERPT -->
+                    <div class="title-excerpt">
+                        <h3><a href="../recepcion">RECEPCIÓN</a></h3>
+                        {{ recepcion.descripcion |richtext }}
+                    </div>
+                    <!-- END of TITLE & EXCERPT -->
+
+                </div><!-- END of ITEM-2 -->
+
+
+                <!-- ITEM-3 -->
+                <div class="wedding-item col-md-4 animation delay2 fadeIn">
+
+                    <!--PHOTO-ITEM-->
+                    <div class="photo-item">
+
+                        <!--PHOTO-->
+                        {% image listaNovios.foto width-290 class="hover-animation image-zoom-in"  %}
+
+                        <!--PHOTO OVERLAY-->
+                        <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
+                        </div><!--END of PHOTO OVERLAY-->
+
+                        <div class="layer wh95 border-photo-caption fade-out">
+
+                        </div><!--END of PHOTO CAPTION-->
+
+                        <!--ICON LINK-->
+                        <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                            <div class="alignment">
+                                <div class="v-align center-middle">
+
+                                    <a href="../lista-novios" class="de-button outline small">
+                                        VER LISTA
+                                    </a>
+
+                                </div>
+                            </div>
+                            </div><!--END of ICON LINK-->
+
+                    </div><!--END of PHOTO-ITEM-->
+
+                    <!-- TITLE & EXCERPT -->
+                    <div class="title-excerpt">
+                        <h3><a href="../lista-novios">LISTA DE NOVIOS</a></h3>
+                        {{ listaNovios.descripcion |richtext }}
+                    </div>
+                    <!-- END of TITLE & EXCERPT -->
+
+                </div> <!-- END of ITEM-3 -->
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div><!-- END of ROW-2 -->

@@ -2,70 +2,301 @@
 {% load static wagtailuserbar %}
 {% load wagtailcore_tags %}
 {% load wagtailimages_tags %}
+{% load savedate_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
 
+    {% image self.jumboImg1 width-1200 as jumbo_image1 %}
+    {% image self.jumboImg2 width-1200 as jumbo_image2 %}
+    {% image self.jumboImg3 width-1200 as jumbo_image3 %}
 
-<!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+    {% image self.recepcionImg width-1200 as recepcion_image %}
+    {% image self.footerImg width-1200 as footer_image %}
+
+    <!-- MAIN SLIDER -->
+    <section id="main-slider" class="flexslider fullscreen">
+
+        <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
+        <div class="slide-title-outter-wrapper">
+
+            <!-- MAIN SLIDER TITLE INNER WRAPPER -->
+            <div class="slide-title-inner-wrapper">
+
+                <!-- TITLE -->
+                <div class="slide-title align-middle">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6 animation delay1 fadeInUp">
+
+                                <div id="save-the-date">
+                                    <div id="save">Save</div>
+                                    <div id="the-date">The Date</div>
+                                    <div id="date">- 08<span class="pink-dot">.</span>04<span class="pink-dot">.</span>17 -</div>
+                                </div>
+                                <div class="banner-text light medium" style="letter-spacing:3px">
+                                    <h4>*** NOS CASAMOS ***</h4>
+                                </div>
+                                <div class="heart-divider" style="margin:0">
+                                    <span class="white-line" style="width:10px"></span>
+                                    <i class="de-icon-heart pink-heart"></i>
+                                    <i class="de-icon-heart white-heart"></i>
+                                    <span class="white-line" style="width:10px"></span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
+
+        </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
+
+        <!-- MAIN SLIDER IMAGES -->
+
+        <ul class="slides">
+
+            <li>
+                <!-- SLIDE IMAGE -->
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url({{ jumbo_image1.url }});">
+                </div>
+
+                <!-- SLIDE OVERLAY -->
+                <div class="slide-overlay" style="opacity:0.2"> </div>
+
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <div class="container">
+            <li>
+                <!-- SLIDE IMAGE -->
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url({{ jumbo_image2.url }});">
+                </div>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
+                <!-- SLIDE OVERLAY -->
+                <div class="slide-overlay" style="opacity:0.2"> </div>
+            </li>
 
-    </div> <!-- /container -->
+            <li>
+                <!-- SLIDE IMAGE -->
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url({{ jumbo_image3.url }});">
+                </div>
+
+                <!-- SLIDE OVERLAY -->
+                <div class="slide-overlay" style="opacity:0.2"> </div>
+            </li>
+
+        </ul><!-- END of MAIN SLIDER IMAGES -->
+
+    </section><!-- ENF of MAIN SLIDER -->
+
+    <!--CONTENT SECTION-->
+    <section id="content">
+
+        <!--COUPLE SECTION-->
+        <section id="couple">
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- SECTION TITLE -->
+                    <div class="col-md-offset-1 col-md-10 text-center">
+
+                        <div class="section-title animation fadeInUp">
+                            <h1>
+                                LA FELIZ PAREJA
+                            </h1>
+
+                            <p class="blurb">
+                                {{ self.mensajePareja |richtext }}
+                            </p>
+
+                            <div class="heart-divider">
+                                <span class="grey-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart grey-heart"></i>
+                                <span class="grey-line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% informacion_novios %}
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- LOCATION & COUNTDOWN SECTION -->
+        <section id="location-countdown">
+            <div class="image-divider auto-height" style="background-image:url({{ recepcion_image.url }});" data-stellar-background-ratio="0.5">
+
+                <div class="divider-overlay"></div>
+
+                <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax
+                <div class="alignment">
+                    <div class="v-align center-middle"> -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10 text-center">
+
+                            <div class="banner-text light medium animation fadeInUp" style="letter-spacing:3px;">
+                                <h4>*** COMPLEJO EL LABRADOR, AREQUIPA ***</h4>
+                            </div>
+
+                            <div class="animation fadeInUp">
+                            <div id="counting-down">
+                                <div id="counting">Ya falta</div>
+                                <div id="down">Poco</div>
+                            </div>
+                            </div>
+
+                            <div class="heart-divider animation fadeInUp">
+                                <span class="white-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart white-heart"></i>
+                                <span class="white-line"></span>
+                            </div>
+                            <div class="banner-text light medium" style="letter-spacing:3px">
+                                    <h4>08 de Abril 2017</h4>
+                            </div>
+
+
+                        </div>
+                    </div>
+                 </div>
+
+                    <!--</div>
+                </div>-->
+
+            </div>
+        </section>
+
+
+        <!-- THE WEDDING SECTION -->
+        <section id="the-wedding">
+
+            <div class="container">
+
+                <!-- ROW-1 -->
+                <div class="row">
+
+                    <!-- SECTION TITLE -->
+                    <div class="col-md-12 text-center">
+
+                        <div class="section-title animation fadeInUp">
+                            <h2>
+                                LA BODA
+                            </h2>
+
+                            <p class="blurb">
+                                {{ self.mensajeBoda |richtext }}
+                            </p>
+
+                            <div class="heart-divider">
+                                <span class="grey-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart grey-heart"></i>
+                                <span class="grey-line"></span>
+                            </div>
+                        </div>
+                    </div>
+               </div> <!-- END of ROW-1 -->
+
+
+               <!-- ROW-2 -->
+                {% informacion_general %}
+
+            </div><!-- END of CONTAINER -->
+
+        </section>
+
+
+        <!-- RSVP SECTION -->
+        <section id="rsvp">
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- SECTION TITLE -->
+                    <div class="col-md-12 text-center ">
+
+                        <div class="section-title animation fadeInUp">
+                            <div class="heart-divider">
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart grey-heart"></i>
+                            </div>
+
+                            <h2>
+                                CONFIRMA TU ASISTENCIA
+                            </h2>
+
+                            <p>
+                               {{ self.mensajePareja |richtext }}
+                            </p>
+
+                            <a href="../confirmacion" class="de-button medium animation fadeInUp">
+                                CONFIRMAR
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
 
 
 
 
+    </section>
 
 
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="image-divider fixed-height" style="background-image:url({{ footer_image.url }});" data-stellar-background-ratio="0.5" >
 
+            <div class="divider-overlay"></div>
+
+            <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
+            <div class="alignment">
+                <div class="v-align center-middle">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="animation fadeInUp">
+                                    <div id="thank-you">
+                                        <div id="thank">Muchas</div>
+                                        <div id="you">gracias</div>
+                                    </div>
+                                </div>
+
+                                <div class="heart-divider animation delay1 fadeInUp">
+                                    <span class="white-line"></span>
+                                    <i class="de-icon-heart pink-heart"></i>
+                                    <i class="de-icon-heart white-heart"></i>
+                                    <span class="white-line"></span>
+                                </div>
+
+                                <div id="footer-couple-name" class="animation delay1 fadeInUp">
+                                    José & Carla
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 {% endblock %}

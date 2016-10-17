@@ -1,0 +1,80 @@
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+<!-- SECTION CONTENT -->
+<div class="col-md-offset-1 col-md-5">
+
+     <!--PHOTO-ITEM-->
+     <div class="photo-item animation fadeInLeft">
+
+            <!--HIS-PHOTO-->
+            {% image infoNovios.fotoNovio width-458 class="hover-animation image-zoom-in"  %}
+
+            <!--PHOTO OVERLAY-->
+            <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
+            </div><!--END of PHOTO OVERLAY-->
+
+            <!--PHOTO CAPTION-->
+            <div class="layer wh95 border-photo-caption hover-animation fade-out">
+                <div class="alignment">
+                    <div class="v-align center-bottom">
+
+                        <div>
+                            <div class="heart-divider" style="margin:0">
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart white-heart"></i>
+                            </div>
+                            <div class="banner-text light small" style="letter-spacing:3px;">
+                                <h4>*** EL NOVIO ***</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div><!--END of PHOTO CAPTION-->
+
+
+    </div><!--END of PHOTO-ITEM-->
+
+    <p class="couple-excerpt animation fadeInRight">
+    {{ infoNovios.mensajeNovio |richtext  }}
+    </p>
+</div>
+
+<div class="col-md-5">
+
+    <!--PHOTO-ITEM-->
+     <div class="photo-item animation fadeInRight">
+
+            <!--HER-PHOTO-->
+            {% image infoNovios.fotoNovio width-458 class="hover-animation image-zoom-in"  %}
+
+            <!--PHOTO OVERLAY-->
+            <div class="layer wh95 hidden-black-overlay hover-animation fade-in">
+            </div><!--END of PHOTO OVERLAY-->
+
+             <!--PHOTO CAPTION-->
+            <div class="layer wh95 border-photo-caption hover-animation fade-out">
+                <div class="alignment">
+                    <div class="v-align center-bottom">
+
+                        <div>
+
+                            <div class="heart-divider" style="margin:0">
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart white-heart"></i>
+                            </div>
+                            <div class="banner-text light small" style="letter-spacing:3px;">
+                                <h4>*** LA NOVIA ***</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div><!--END of PHOTO CAPTION-->
+
+    </div><!--END of PHOTO-ITEM-->
+
+    <p class="couple-excerpt animation fadeInRight">
+    {{ infoNovios.mensajeNovia |richtext  }}
+    </p>
+
+</div>
