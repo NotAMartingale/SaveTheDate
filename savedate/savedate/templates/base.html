@@ -32,6 +32,7 @@
         <link rel="stylesheet" href={% static "css/owlcarousel/owl.theme.css" %} type="text/css">
         <!-- Icon -->
         <link rel="stylesheet" href={% static "css/fonts/fontello/css/fontello.css" %} type="text/css" media="screen" />
+
         <!-- Font -->
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
@@ -76,7 +77,7 @@
 
         <!-- NAVIGATION -->
     	<header id="nav-header">
-        	<nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
+        	<nav id="nav-bar" class="{% block navStyle %} {% endblock %} ">
 
                 <div id="nav-wrapper">
 
@@ -86,18 +87,10 @@
                         <a href="/">
                     		<div class="css-logo rounded">
                    				<div class="css-logo-text">
-                        			<strong>J</strong><i class="de-icon-heart-1"></i><strong>C</strong>
+                        			<strong>C</strong><i class="de-icon-heart-1"></i><strong>J</strong>
                     			</div>
                     		</div>
                         </a>
-
-                    	<!-- IMG LOGO
-                        <a href="index.html">
-                    		<div class="img-logo">
-                    			<img src="images/slide1.jpg">
-                    		</div>
-                        </a>
-                        -->
                 	</div>
                 	<!-- END of LOGO -->
 
@@ -122,7 +115,7 @@
                             </ul>
                         </li>
                     	<li>
-                        	<a href="/confirmacion">CONFIRMAR</a>
+                        	<a href="/estadia">ESTADÍA</a>
                         </li>
                 	</ul>
                     <div class="clearboth"></div>
@@ -171,6 +164,8 @@
         <script src={%  static  "js/magnific-popup/jquery.magnific-popup.js" %}></script>
         <!-- Owl Carousel -->
         <script src={%  static  "js/owlcarousel/owl.carousel.js" %}></script>
+
+        {% block extraJS %}{% endblock %}
 
         <!-- Custom Core Script -->
         <script type="text/javascript" src={%  static  "js/script.js" %}></script>

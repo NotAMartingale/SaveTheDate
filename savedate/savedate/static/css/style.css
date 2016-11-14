@@ -216,7 +216,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 
 h1 a:hover, h2 a:hover, h3 a:hover, 
 h4 a:hover, h5 a:hover, h6 a:hover{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 h1, h2, h3,
@@ -481,7 +481,7 @@ img.with-border{
   	font-weight: normal;
   	font-size:10px;
 	content: '\e9bd';
-	color:#f0394d;
+	color:#ecc9c7;
 	text-align:center;
 }
 
@@ -498,7 +498,7 @@ img.with-border{
 }
 
 #nav-menu > li a:hover{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 /* 03.1.1 Transparent 							 */
@@ -508,7 +508,7 @@ img.with-border{
 }
 
 .transparent #nav-menu > li a:hover{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 .transparent.stick-it #nav-menu > li a{
@@ -540,7 +540,7 @@ img.with-border{
 	list-style-type:none;
 	padding:0;
 	text-align:left;
-	border-top:solid 3px #f0394d
+	border-top:solid 3px #ecc9c7
 }
 
 #nav-menu li:hover > ul{
@@ -560,7 +560,7 @@ img.with-border{
 }   
 
 #nav-menu ul li a:hover{
-	background-color:#f0394d;
+	background-color:#ecc9c7;
 	border:none;
 	color:#FFF;
 }
@@ -686,7 +686,7 @@ img.with-border{
 }
 
 #menu-icon a:hover i{
-	color:#f0394d
+	color:#ecc9c7
 }
 
 #menu-icon.white a i{
@@ -695,7 +695,7 @@ img.with-border{
 }
 
 #menu-icon.white a:hover i{
-	color:#f0394d
+	color:#ecc9c7
 }
 
 
@@ -723,7 +723,7 @@ img.with-border{
 }
 
 #sticky-menuicon a:hover{
-	background-color:#f0394d;
+	background-color:#ecc9c7;
 }
 
 #sticky-menuicon a:hover i{
@@ -780,7 +780,7 @@ img.with-border{
 }
 
 #close-button:hover i{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 /* 04.3.3 Parent Menu */
@@ -802,7 +802,7 @@ img.with-border{
   	font-weight: normal;
   	font-size:10px;
 	content: '\e9bd';
-	color:#f0394d;
+	color:#ecc9c7;
 	text-align:center;
 	vertical-align:middle;
 	padding-right:10px;
@@ -817,7 +817,7 @@ img.with-border{
 }
 
 #side-nav-menu > li a:hover{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 /* 04.3.4 Child Menu */
@@ -879,7 +879,7 @@ img.with-border{
 	width:100%; 
 	height:100%; 
 	border-radius:0%; 
-	background-color:#f0394d; 
+	background-color:#d26974;
 	color:#FFF; 
 	text-align:center; 
 	font-family: 'Arvo', serif;
@@ -1081,7 +1081,7 @@ img.with-border{
 }
 
 .pink-dot{
-	color: #f0394d; 
+	color: #ecc9c7; 
 }
 
 /* ----------------------------------------------*/
@@ -1268,7 +1268,7 @@ img.with-border{
 }
 
 .sidebar-menu li a:hover{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 .side-tab{
@@ -1322,7 +1322,7 @@ img.with-border{
 	left:0; 
 	right:0; 
 	top:-12px;
-	color:#f0394d !important; 
+	color:#ecc9c7 !important;
 	background-color:#e1dddd !important;
 }
 
@@ -1482,14 +1482,14 @@ hr.line-divider{
 }*/
 
 .pink-heart{
-	color:#f0394d; 
+	color:#ecc9c7;
 	font-size:18px; 
 	position:relative; 
 	z-index:3
 }
 
 .white-heart{
-	color:#FFF; 
+	color:#f7f9f8;
 	font-size:18px; 
 	margin-left:-15px; 
 	position:relative;
@@ -1523,8 +1523,8 @@ a.de-button.outline, span.de-button.outline, input[type=submit].outline{
 }
 
 a.de-button.reverse, span.de-button.reverse, input[type=submit].reverse{
-	background-color:#f0394d; 
-	border:solid 1px #f0394d;
+	background-color:#ecc9c7; 
+	border:solid 1px #ecc9c7;
 	color:#FFF;
 }
 
@@ -1544,8 +1544,8 @@ a.de-button.large, span.de-button.large, input[type=submit].large{
 }
 
 a.de-button:hover, input[type=submit]:hover{
-	background-color:#f0394d;
-	border-color:#f0394d;
+	background-color:#ecc9c7;
+	border-color:#ecc9c7;
 	color:#FFF;
 	text-decoration:none;
 }
@@ -1644,7 +1644,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 	font-family: "fontello";
 	position:absolute;
 	font-size:22px;
-	color:#f0394d;
+	color:#ecc9c7;
 	content:"\e806";
 	top:-17px;
 	left:0;
@@ -1801,11 +1801,11 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 }
 
 .de-icon.default.reverse{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 a:hover .de-icon.default, a:hover .de-icon.default.light{
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 a:hover .de-icon.default.reverse{
@@ -1832,7 +1832,7 @@ a:hover .de-icon.default.light.reverse{
 }
 
 .de-icon.square.reverse, .de-icon.circle.reverse, .de-icon.rounded.reverse{
-	background-color:#f0394d;
+	background-color:#ecc9c7;
 	color:#FFF;
 }
 
@@ -1843,7 +1843,7 @@ a:hover .de-icon.default.light.reverse{
 
 .de-icon.square.light.reverse, .de-icon.circle.light.reverse, .de-icon.rounded.light.reverse{
 	background-color:#FFF;
-	color:#f0394d;
+	color:#ecc9c7;
 }
 
 
@@ -1855,8 +1855,8 @@ a:hover .de-icon.default.light.reverse{
 
 .de-icon.outline.reverse{
 	background-color:transparent;
-	color:#f0394d;
-	border:1px solid #f0394d;
+	color:#ecc9c7;
+	border:1px solid #ecc9c7;
 }
 
 .de-icon.outline.light, .de-icon.outline.light.reverse{
@@ -1866,7 +1866,7 @@ a:hover .de-icon.default.light.reverse{
 }
 
 a:hover .de-icon.circle, a:hover .de-icon.rounded, a:hover .de-icon.square{
-	background-color:#f0394d;
+	background-color:#ecc9c7;
 	color:#FFF;
 	border:none;
 }
@@ -1920,7 +1920,7 @@ a:hover .de-icon.effect2 i{
 /* 08.5 Effect Square/Rounded To Circle 	  	  */
 /*------------------------------------------------*/
 a:hover .de-icon.effect3{
-	background-color:#f0394d;
+	background-color:#ecc9c7;
 	color:#fff;
 	border-radius: 50%;
 }
@@ -2364,8 +2364,8 @@ form .btn-primary.focus,
 form .btn-primary:active,
 form .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-	background-color:#f0394d; 
-	border-color:#f0394d;
+	background-color:#ecc9c7; 
+	border-color:#ecc9c7;
 	color:#FFF;
  	border-color: #cccccc;
 }
@@ -2438,7 +2438,7 @@ option{
 }
 
 .message .bg-danger{
-	background-color:#f0394d; 
+	background-color:#ecc9c7; 
 }
 
 .message .bg-success{
@@ -2702,7 +2702,7 @@ footer .image-divider.fixed-height{
 }
 
 .his-her-name .custom-heart{
-	background-color:#f0394d; 
+	background-color:#ecc9c7; 
 	width:65px; 
 	height:65px; 
 	line-height:65px;	
@@ -2737,7 +2737,7 @@ footer .image-divider.fixed-height{
 	margin-left:16px;
 	height:85px; 
 	width:85px; 
-	background-color:#f0394d; 
+	background-color:#ecc9c7; 
 	border-radius:50%;
 }
 
@@ -2805,7 +2805,7 @@ footer .image-divider.fixed-height{
 }
 
 .and{
-	color:#f0394d
+	color:#ecc9c7
 }
 
 .border-column{
@@ -2851,7 +2851,7 @@ h2#dont-miss-it-title{
 }
 
 .circle-countdown .countdown-amount {
-	background-color:#f0394d;
+	background-color:#ecc9c7;
 	width:85px;
 	height:85px;
 	border-radius:50%;
@@ -2944,7 +2944,7 @@ h2#dont-miss-it-title{
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
-	background: #f0394d;
+	background: #ecc9c7;
 }
 
 /* -------------------------------------------*/
@@ -3005,719 +3005,719 @@ button.mfp-close, button.mfp-arrow {
 
 }
 
-@media screen and (max-width: 991px) {	
-/*===============================================*/
-/* 02. NAV BAR 	 							 	 */
-/*===============================================*/
-
-#nav-bar{
-	height:100px;
-}
-
-#nav-bar-sticky-wrapper{
-	height:100px !important;
-}
-
-#nav-bar.top-bar.stick-it{
-	height:100px; 	
-}
-
-#nav-bar.bottom-bar.stick-it{
-	height:100px; 	
-}
-
-#nav-bar.bottom-bar.outside{
-	bottom:-100px;
-}
-
-/* ----------------------------------------------*/
-/* 02.1 Width & Color (Nav Bar)			 		 */
-/* ----------------------------------------------*/
-/* 02.1.1 Fixed-width */
-/* 02.1.2 Fluid-width */
-#nav-bar.fluid-width #nav-wrapper,
-#nav-bar.fixed-width #nav-wrapper{
-	padding:20px 30px
-}
-
-/* ----------------------------------------------*/
-/* 02.2 Logo & Nav Position	 					 */
-/* ----------------------------------------------*/
-.logo-wrapper{
-	margin:0;
-}
-
-#nav-menu { display: none }
-#nav-menu.sidebar {display:block}	
-#nav-menu.open { display: block; }
-
-#nav-menu,
-.bottom-bar.transparent #nav-menu{	
-	list-style-type:none; 
-	margin:0; 
-	padding:0 !important; 
-	position:absolute;
-	left:0;
-	top:100%;
-	clear:both !important;
-	text-align:left !important;
-	width:100% !important;
-	background-color:#FFF;
-	height:330px;
-	overflow:auto;
-}
-
-.transparent #nav-menu{
-	width:80% !important;
-	position:absolute; 
-	margin:auto; 
-	top:100%; 
-	left:0; 
-	right:0;
-}
-
-.transparent.stick-it #nav-menu{
-	width:100% !important;
-}
-
-/* 02.2.1 Nav Center */
-/* 02.2.2 Nav Left 	 */
-/* 02.2.3 Nav Right  */
-#nav-bar.nav-center .logo-wrapper,
-#nav-bar.nav-left .logo-wrapper,
-#nav-bar.nav-right .logo-wrapper{
-	position:relative;
-	float:left;	
-}
-
-
-/*===============================================*/
-/* 03. NAV MENU	 	 							 */
-/*===============================================*/
-
-/* ----------------------------------------------*/
-/* 03.1 Parent Menu 						     */
-/* ----------------------------------------------*/
-#nav-menu, #nav-menu ul{
-	-webkit-overflow-scrolling : touch;
-}
-
-#nav-menu li{
-	position:relative;
-}
-
-#nav-menu li a{
-	display:block;
-	width:100%;
-	color:#666;
-	border-bottom:solid thin #f4f2f2;
-}
-
-.transparent #nav-menu li a{
-	color:#666;
-}
-
-#nav-menu li a:hover{
-	background-color:#f0394d;
-	color:#FFF;
-}
-
-#nav-menu li:before{
-	content: '';
-}
-
-/* 03.1.2 Additional Class For Nav Center */
-/* ----------------------------------------------*/
-.first-child-margin,
-.last-child-margin,
-.split-margin{
-	margin:0
-}
-
-/* ----------------------------------------------*/
-/* 03.2 Child Menu 								 */
-/* ----------------------------------------------*/
-#nav-menu ul{
-	display:block;
-	width:100%;
-	position:relative;
-	top:0;
-	text-align:left;
-	border-top:none;
-}
-
-#nav-menu li > ul li a:before{ 
-	content: '-';
-	padding-right:10px;
-} 
-
-/* 03.2.2 Child-Parent Arrow */
-/* ----------------------------------------------*/
-#nav-menu li > ul li a:after { 
-	content: '';
-} 
-
-
-/* 03.2.3 More Child */
-/* ----------------------------------------------*/
-#nav-menu ul ul{
-	display:block;
-	width:100%;
-	position:relative;
-	top:0;
-	left:0;
-	border:none;
-}
-
-#nav-menu ul ul li a:before{ 
-	content: '- -';
-	padding-right:10px;
-} 
-
-#nav-menu ul ul ul li a:before{ 
-	content: '- - -';
-	padding-right:10px;
-} 
-
-
-/* ----------------------------------------------*/
-/* 03.3 Mobile Nav								 */
-/* ----------------------------------------------*/
-#mobile-nav{
-	display:block;
-	position:relative;
-	float:right;
-	font-size:28px;
-	margin-top:12px;
-	z-index:1000;
-}
-
-.transparent #mobile-nav{	
-	color:#FFF;
-}
-
-.transparent.stick-it #mobile-nav{
-	color:#666;	
-}
-
-
-/* ----------------------------------------------*/
-/* 04.1 Menuicon Bar Width & Position 			 */
-/*-----------------------------------------------*/
-#menuicon-bar{
-	top:0;
-	padding:0 30px
-}
-
-/* 04.1.3 Menuicon-Left */
-/* ----------------------------------------------*/
-#menuicon-bar.menuicon-left .logo-outter-wrapper{
-	margin-top:40px;
-}
-
-
-/* 04.1.4 Menuicon-Right */
-/* ----------------------------------------------*/
-#menuicon-bar.menuicon-right .logo-outter-wrapper{
-	margin-top:40px;
-}
-
-/* 04.2.2 Sticky Menu Icon */
-/* ----------------------------------------------*/
-#sticky-menuicon{
-	top:10px;
-}
-
-#menuicon-bar.menuicon-right #sticky-menuicon{
-	right:30px; 
-}
-
-#menuicon-bar.menuicon-left #sticky-menuicon{
-	left:30px; 
-}
-
-
-
-/* 06.2.1 Main Slider Flexslider Control Nav & Paging */
-/* ----------------------------------------------*/
-#main-slider.flexslider:hover .flex-prev { opacity:0.4;  left: 20px; }
-#main-slider.flexslider:hover .flex-next { opacity:0.4; right: 20px; }
-#main-slider.flexslider .flex-direction-nav .flex-prev { opacity:0.4; left: 20px; }
-#main-slider.flexslider .flex-direction-nav .flex-next { opacity:0.4; right: 20px; }
-
-
-/* ----------------------------------------------*/
-/* 07.1 PAGE LAYOUT						 		 */
-/* ----------------------------------------------*/
-
-/* 07.1.1 Page Without Slider					 */
-/* ----------------------------------------------*/
-.no-slider-page #content{
-	padding:140px 0 80px 0;
-}
-
-/* 07.1.2 Page With Slider					 	 */
-/* ----------------------------------------------*/
-.slider-title-page #content{
-	padding:80px 0;
-}
-
-/* 07.1.3 Page With Banner						 */
-/* ----------------------------------------------*/
-.slider-banner-page #content{
-	padding:60px 0 80px 0;
-}
-
-/* 07.1.4 Page With Full Gallery				 */
-/* ----------------------------------------------*/
-.full-gallery-page #content{
-	padding:100px 0 80px 0;
-}
-
-/* 07.1.5 Page With Outside Bottom Bar 			 */
-/* ----------------------------------------------*/
-.outside-bottom-bar-page #content{
-	margin-top:100px;
-}
-
-/* 07.2.7 Image & Video Divider					 */
-/* ----------------------------------------------*/
-.divider-wrapper{
-	padding:70px 0;
-}
-
-.image-divider {
-	background-attachment: scroll;
-}
-
-/*-----------------------------------------------*/
-/* 07.2.13 Popup Template						 */
-/*-----------------------------------------------*/
-#popup-template{
-	width:90%;
-}
-
-
-/*===============================================*/
-/* 13 LOCATION PAGE								 */
-/*===============================================*/
-.interest-icon{
-	width:10%;
-}
-
-.interest-blurb{
-	width:88%;
-}
-
-/* ----------------------------------------------*/
-/* 14.2 Couple Section							 */
-/* ----------------------------------------------*/
-.his-her-name .heart-wrapper{
-	display:none;
-}
-
-/* ----------------------------------------------*/
-/* 14.3 Our Story Section						 */
-/* ----------------------------------------------*/
-.story-row.row {
-    display: block;
-	padding:20px 0
-}
-
-.story-row.row [class*="col-"] {
-    display: block;
-	text-align:center;
-}
-
-.story-date-wrapper{
-	margin-bottom:30px;
-}
-
-.story-date{
-	float:none;
-	position:absolute;	
-	top:-70px;
-	left:0;
-	right:0;
-	margin:auto;
-}
-
-.story-date .month-year{
-	font-family: 'Oswald', sans-serif; 
-	font-size:16px; 
-	color:#FFF;
-}
-
-.arrow-right {
-	display:none;
-	float:none;
-}
-
-.arrow-left {
-	display:none;
-	float:none;
-}
-
-.vertical-line{
-	display:none;
-}
-
-
-/* ----------------------------------------------*/
-/* 14.4 Where When Section						 */
-/* ----------------------------------------------*/
-.border-column{
-	border:none;
-}
-
-
-
-
-
-@media screen and (max-width: 991px) and (orientation : landscape) {
-/* ----------------------------------------------*/
-/* 02.2 Logo & Nav Position						 */
-/* ----------------------------------------------*/
-#nav-menu{	
-	height:230px !important;
-}
-}
-
-@media screen and (max-width: 768px) and (orientation : landscape) {
-/* 06.5.6 Save The Date Title */
-/* ----------------------------------------------*/	
-#save-the-date{
-	padding-right:40px;
-	padding-top:0;
-	margin-bottom:0px;	
-}
-
-#save{
-	font-size:50px; 
-	line-height:30px
-}
-
-#the-date{
-	font-size:40px;
-}
-
-#date{
-	font-size:30px; 
-	line-height:20px;
-}
-}
-
-
-@media screen and (max-width: 768px) {	
-/*===============================================*/
-/* 11. FORM										 */
-/*===============================================*/
-form .btn{
-	width:100%;
-	white-space:normal;
-}
-}
-
-
-@media screen and (max-width: 480px)  {	
-/*===============================================*/
-/* 01. GENERAL			 						 */
-/*===============================================
-p{
-	font-size:14px;
-	line-height:24px;
-}*/
-
-
-
-/* 06.5.6 Save The Date Title */	
-/* ----------------------------------------------*/	
-#save-the-date{
-	padding-right:40px;
-	margin-bottom:0px;
-	padding-top:0;
-	
-}
-
-#save{
-	font-size:60px; 
-	line-height:35px
-}
-
-#the-date{
-	font-size:50px;
-}
-
-#date{
-	font-size:40px; 
-	line-height:25px;
-}
-
-/* 07.2.2 Section Title Wrapper					 */
-/* ----------------------------------------------*/
-.section-title{
-	margin-bottom:50px; 
-}	
-	
-/* 07.2.4 Title-Excerpt White Box				 */
-/* ----------------------------------------------*/
-.title-excerpt{
-	padding:20px;
-}
-
-/* 07.2.11 Banner Text				 			 */
-/* ----------------------------------------------*/
-.banner-text.small,
-.banner-text.medium,
-.banner-text.large{
-	padding:0;
-}
-
-/*-----------------------------------------------*/
-/* 07.2.13 Popup Template						 */
-/*-----------------------------------------------*/
-#popup-template #the-content{
-	padding-right:30px;
-	padding-left:30px;
-	text-align:center;
-}
-
-
-/*===============================================*/
-/* 10 MASONRY GALLERY							 */
-/*===============================================*/
-.masonry-col, .grid-sizer{
-	width:100% !important;
-	margin-bottom:5% !important;
-}
-
-/* ----------------------------------------------*/
-/* 12.1 Couple Section							 */
-/* ----------------------------------------------*/	
-#couple{
-	padding:60px 0 40px 0;
-}
-
-.couple-name{
-	font-size:36px; 
-	padding-top:80px !important;
-	line-height:38px; 
-}
-
-.couple-excerpt{
-	margin-top:20px;
-}
-
-
-
-/* ----------------------------------------------*/
-/* 12.2 Location & Countdown Section			 */
-/* ----------------------------------------------*/	
-#location-countdown .image-divider.auto-height {
-	padding:60px 0;
-}	
-
-#counting{
-	font-size:55px; 
-	line-height:45px
-}
-
-#down{
-	font-size:50px; 
-	line-height:50px;
-}
-
-.simple-countdown .countdown-amount {
-	font-size:16px;
-}
-.simple-countdown .countdown-period {
-	font-size:16px;
-}
-
-/* ----------------------------------------------*/
-/* 12.3 The Wedding Section			 			 */
-/* ----------------------------------------------*/	
-#the-wedding{
-	padding:60px 0 40px 0;
-}
-	
-/* ----------------------------------------------*/
-/* 12.4 RSVP Section				 			 */
-/* ----------------------------------------------*/
-#rsvp{
-	padding:60px 0;
-	background-color:#FFF
-}
-
-/*===============================================*/
-/* 13 LOCATION PAGE								 */
-/*===============================================*/
-.interest-icon{
-	width:20%;
-}
-
-.interest-blurb{
-	width:78%;
-}
-
-/*===============================================*/
-/* 14. ONEPAGE SECTION							 */
-/*===============================================*/
-
-/* ----------------------------------------------*/
-/* 14.3 Our Story Section						 */
-/* ----------------------------------------------*/
-#our-story{
-	padding: 80px 0
-}
-
-#end-of-story{
-	margin-top:50px;
-}
-
-/* ----------------------------------------------*/
-/* 14.4 Where When Section						 */
-/* ----------------------------------------------*/
-#where-when{
-	padding: 80px 0
-}
-
-/* ----------------------------------------------*/
-/* 14.5 Gallery Section							 */
-/* ----------------------------------------------*/
-#gallery-section{
-	padding: 80px 0
-}
-
-/* ----------------------------------------------*/
-/* 14.6 Don't Miss It / Countdown Section		 */
-/* ----------------------------------------------*/
-
-.circle-countdown .countdown-amount {
-	width:45px;
-	height:45px;
-	padding-top:9px;
-	font-size:20px;
-}
-
-.circle-countdown .countdown-period {
-	padding:10px;
-	display:block;
-	text-align:center;
-	font-size:12px;
-	text-transform:uppercase;    
-}
-
-/* ----------------------------------------------*/
-/* 14.7 More Events Section						 */
-/* ----------------------------------------------*/
-#more-events{
-	padding: 80px 0
-}
-
-/* ----------------------------------------------*/
-/* 14.8 Groomsmen Section						 */
-/* ----------------------------------------------*/
-#groomsmen-section{
-	padding: 80px 0
-}
-
-/* ----------------------------------------------*/
-/* 14.9 Bridesmaid Section						 */
-/* ----------------------------------------------*/
-#bridesmaid-section{
-	padding: 80px 0
-}
-
-/* ----------------------------------------------*/
-/* 14.10 Gift Section							 */
-/* ----------------------------------------------*/
-#gift-section{
-	padding: 80px 0; 
-}
-
-/* ----------------------------------------------*/
-/* 14.11 RSVP Section							 */
-/* ----------------------------------------------*/
-#rsvp-section{
-	padding: 80px 0
-}
-
-}
-
-
-@media screen and (max-width: 320px) {
-/* 06.5.6 Save The Date Title */
-/* ----------------------------------------------*/
-#save-the-date{
-	padding-right:40px;
-	padding-top:0;
-	margin-bottom:0px;
-	
-}
-
-#save{
-	font-size:50px; 
-	line-height:30px
-}
-
-#the-date{
-	font-size:40px;
-}
-
-#date{
-	font-size:30px; 
-	line-height:20px;
-}
-
-/* ----------------------------------------------*/
-/* 12.1 Couple Section							 */
-/* ----------------------------------------------*/
-.couple-name{
-	font-size:30px; 
-	padding-top:70px !important;
-	line-height:30px; 
-}
-
-.couple-excerpt{
-	margin-top:20px;
-
-}
-
-/* ----------------------------------------------*/
-/* 12.5 Footer Section				 			 */
-/* ----------------------------------------------*/
-footer .image-divider.fixed-height{
-	 height:400px;
-}
-
-#thank-you{
-	text-align:center; 
-	color:#FFF; 
-	font-family: 'Pacifico';
-	-ms-transform: rotate(-10deg); 
-	-webkit-transform: rotate(-10deg); 
-	transform: rotate(-10deg);
-	padding-right:30px;
-	margin-top:40px;
-	margin-bottom:25px;
-}
-
-#thank{
-	font-size:45px; 
-	line-height:35px
-}
-
-#you{
-	font-size:45px; 
-	line-height:35px;
-}
-
-#footer-couple-name{
-	font-family: 'Oswald', sans-serif; 
-	font-size:15px; 
-	color:#FFF; 
-	letter-spacing:3px; 
-	margin-top:10px;
-}
+@media screen and (max-width: 991px) {
+	/*===============================================*/
+	/* 02. NAV BAR 	 							 	 */
+	/*===============================================*/
+	#nav-bar {
+		height: 100px;
+	}
+
+	#nav-bar-sticky-wrapper {
+		height: 100px !important;
+	}
+
+	#nav-bar.top-bar.stick-it {
+		height: 100px;
+	}
+
+	#nav-bar.bottom-bar.stick-it {
+		height: 100px;
+	}
+
+	#nav-bar.bottom-bar.outside {
+		bottom: -100px;
+	}
+
+	/* ----------------------------------------------*/
+	/* 02.1 Width & Color (Nav Bar)			 		 */
+	/* ----------------------------------------------*/
+	/* 02.1.1 Fixed-width */
+	/* 02.1.2 Fluid-width */
+	#nav-bar.fluid-width #nav-wrapper,
+	#nav-bar.fixed-width #nav-wrapper {
+		padding: 20px 30px
+	}
+
+	/* ----------------------------------------------*/
+	/* 02.2 Logo & Nav Position	 					 */
+	/* ----------------------------------------------*/
+	.logo-wrapper {
+		margin: 0;
+	}
+
+	#nav-menu {
+		display: none
+	}
+
+	#nav-menu.sidebar {
+		display: block
+	}
+
+	#nav-menu.open {
+		display: block;
+	}
+
+	#nav-menu,
+	.bottom-bar.transparent #nav-menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0 !important;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		clear: both !important;
+		text-align: left !important;
+		width: 100% !important;
+		background-color: #FFF;
+		height: 330px;
+		overflow: auto;
+	}
+
+	.transparent #nav-menu {
+		width: 80% !important;
+		position: absolute;
+		margin: auto;
+		top: 100%;
+		left: 0;
+		right: 0;
+	}
+
+	.transparent.stick-it #nav-menu {
+		width: 100% !important;
+	}
+
+	/* 02.2.1 Nav Center */
+	/* 02.2.2 Nav Left 	 */
+	/* 02.2.3 Nav Right  */
+	#nav-bar.nav-center .logo-wrapper,
+	#nav-bar.nav-left .logo-wrapper,
+	#nav-bar.nav-right .logo-wrapper {
+		position: relative;
+		float: left;
+	}
+
+	/*===============================================*/
+	/* 03. NAV MENU	 	 							 */
+	/*===============================================*/
+	/* ----------------------------------------------*/
+	/* 03.1 Parent Menu 						     */
+	/* ----------------------------------------------*/
+	#nav-menu, #nav-menu ul {
+		-webkit-overflow-scrolling: touch;
+	}
+
+	#nav-menu li {
+		position: relative;
+	}
+
+	#nav-menu li a {
+		display: block;
+		width: 100%;
+		color: #666;
+		border-bottom: solid thin #f4f2f2;
+	}
+
+	.transparent #nav-menu li a {
+		color: #666;
+	}
+
+	#nav-menu li a:hover {
+		background-color: #ecc9c7;
+		color: #FFF;
+	}
+
+	#nav-menu li:before {
+		content: '';
+	}
+
+	/* 03.1.2 Additional Class For Nav Center */
+	/* ----------------------------------------------*/
+	.first-child-margin,
+	.last-child-margin,
+	.split-margin {
+		margin: 0
+	}
+
+	/* ----------------------------------------------*/
+	/* 03.2 Child Menu 								 */
+	/* ----------------------------------------------*/
+	#nav-menu ul {
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		text-align: left;
+		border-top: none;
+	}
+
+	#nav-menu li > ul li a:before {
+		content: '-';
+		padding-right: 10px;
+	}
+
+	/* 03.2.2 Child-Parent Arrow */
+	/* ----------------------------------------------*/
+	#nav-menu li > ul li a:after {
+		content: '';
+	}
+
+	/* 03.2.3 More Child */
+	/* ----------------------------------------------*/
+	#nav-menu ul ul {
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		border: none;
+	}
+
+	#nav-menu ul ul li a:before {
+		content: '- -';
+		padding-right: 10px;
+	}
+
+	#nav-menu ul ul ul li a:before {
+		content: '- - -';
+		padding-right: 10px;
+	}
+
+	/* ----------------------------------------------*/
+	/* 03.3 Mobile Nav								 */
+	/* ----------------------------------------------*/
+	#mobile-nav {
+		display: block;
+		position: relative;
+		float: right;
+		font-size: 28px;
+		margin-top: 12px;
+		z-index: 1000;
+	}
+
+	.transparent #mobile-nav {
+		color: #FFF;
+	}
+
+	.transparent.stick-it #mobile-nav {
+		color: #666;
+	}
+
+	/* ----------------------------------------------*/
+	/* 04.1 Menuicon Bar Width & Position 			 */
+	/*-----------------------------------------------*/
+	#menuicon-bar {
+		top: 0;
+		padding: 0 30px
+	}
+
+	/* 04.1.3 Menuicon-Left */
+	/* ----------------------------------------------*/
+	#menuicon-bar.menuicon-left .logo-outter-wrapper {
+		margin-top: 40px;
+	}
+
+	/* 04.1.4 Menuicon-Right */
+	/* ----------------------------------------------*/
+	#menuicon-bar.menuicon-right .logo-outter-wrapper {
+		margin-top: 40px;
+	}
+
+	/* 04.2.2 Sticky Menu Icon */
+	/* ----------------------------------------------*/
+	#sticky-menuicon {
+		top: 10px;
+	}
+
+	#menuicon-bar.menuicon-right #sticky-menuicon {
+		right: 30px;
+	}
+
+	#menuicon-bar.menuicon-left #sticky-menuicon {
+		left: 30px;
+	}
+
+	/* 06.2.1 Main Slider Flexslider Control Nav & Paging */
+	/* ----------------------------------------------*/
+	#main-slider.flexslider:hover .flex-prev {
+		opacity: 0.4;
+		left: 20px;
+	}
+
+	#main-slider.flexslider:hover .flex-next {
+		opacity: 0.4;
+		right: 20px;
+	}
+
+	#main-slider.flexslider .flex-direction-nav .flex-prev {
+		opacity: 0.4;
+		left: 20px;
+	}
+
+	#main-slider.flexslider .flex-direction-nav .flex-next {
+		opacity: 0.4;
+		right: 20px;
+	}
+
+	/* ----------------------------------------------*/
+	/* 07.1 PAGE LAYOUT						 		 */
+	/* ----------------------------------------------*/
+	/* 07.1.1 Page Without Slider					 */
+	/* ----------------------------------------------*/
+	.no-slider-page #content {
+		padding: 140px 0 80px 0;
+	}
+
+	/* 07.1.2 Page With Slider					 	 */
+	/* ----------------------------------------------*/
+	.slider-title-page #content {
+		padding: 80px 0;
+	}
+
+	/* 07.1.3 Page With Banner						 */
+	/* ----------------------------------------------*/
+	.slider-banner-page #content {
+		padding: 60px 0 80px 0;
+	}
+
+	/* 07.1.4 Page With Full Gallery				 */
+	/* ----------------------------------------------*/
+	.full-gallery-page #content {
+		padding: 100px 0 80px 0;
+	}
+
+	/* 07.1.5 Page With Outside Bottom Bar 			 */
+	/* ----------------------------------------------*/
+	.outside-bottom-bar-page #content {
+		margin-top: 100px;
+	}
+
+	/* 07.2.7 Image & Video Divider					 */
+	/* ----------------------------------------------*/
+	.divider-wrapper {
+		padding: 70px 0;
+	}
+
+	.image-divider {
+		background-attachment: scroll;
+	}
+
+	/*-----------------------------------------------*/
+	/* 07.2.13 Popup Template						 */
+	/*-----------------------------------------------*/
+	#popup-template {
+		width: 90%;
+	}
+
+	/*===============================================*/
+	/* 13 LOCATION PAGE								 */
+	/*===============================================*/
+	.interest-icon {
+		width: 10%;
+	}
+
+	.interest-blurb {
+		width: 88%;
+	}
+
+	/* ----------------------------------------------*/
+	/* 14.2 Couple Section							 */
+	/* ----------------------------------------------*/
+	.his-her-name .heart-wrapper {
+		display: none;
+	}
+
+	/* ----------------------------------------------*/
+	/* 14.3 Our Story Section						 */
+	/* ----------------------------------------------*/
+	.story-row.row {
+		display: block;
+		padding: 20px 0
+	}
+
+	.story-row.row [class*="col-"] {
+		display: block;
+		text-align: center;
+	}
+
+	.story-date-wrapper {
+		margin-bottom: 30px;
+	}
+
+	.story-date {
+		float: none;
+		position: absolute;
+		top: -70px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.story-date .month-year {
+		font-family: 'Oswald', sans-serif;
+		font-size: 16px;
+		color: #FFF;
+	}
+
+	.arrow-right {
+		display: none;
+		float: none;
+	}
+
+	.arrow-left {
+		display: none;
+		float: none;
+	}
+
+	.vertical-line {
+		display: none;
+	}
+
+	/* ----------------------------------------------*/
+	/* 14.4 Where When Section						 */
+	/* ----------------------------------------------*/
+	.border-column {
+		border: none;
+	}
+
+	@media screen and (max-width: 991px) and (orientation: landscape) {
+		/* ----------------------------------------------*/
+		/* 02.2 Logo & Nav Position						 */
+		/* ----------------------------------------------*/
+		#nav-menu {
+			height: 230px !important;
+		}
+	}
+
+	@media screen and (max-width: 768px) and (orientation: landscape) {
+		/* 06.5.6 Save The Date Title */
+		/* ----------------------------------------------*/
+		#save-the-date {
+			padding-right: 40px;
+			padding-top: 0;
+			margin-bottom: 0px;
+		}
+
+		#save {
+			font-size: 50px;
+			line-height: 30px
+		}
+
+		#the-date {
+			font-size: 40px;
+		}
+
+		#date {
+			font-size: 30px;
+			line-height: 20px;
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+		/*===============================================*/
+		/* 11. FORM										 */
+		/*===============================================*/
+		form .btn {
+			width: 100%;
+			white-space: normal;
+		}
+	}
+
+
+	@media screen and (max-width: 480px) {
+		/*===============================================*/
+		/* 01. GENERAL			 						 */
+		/*===============================================
+        p{
+            font-size:14px;
+            line-height:24px;
+        }*/
+		/* 06.5.6 Save The Date Title */
+		/* ----------------------------------------------*/
+		#save-the-date {
+			padding-right: 40px;
+			margin-bottom: 0px;
+			padding-top: 0;
+
+		}
+
+		#save {
+			font-size: 60px;
+			line-height: 35px
+		}
+
+		#the-date {
+			font-size: 50px;
+		}
+
+		#date {
+			font-size: 40px;
+			line-height: 25px;
+		}
+
+		/* 07.2.2 Section Title Wrapper					 */
+		/* ----------------------------------------------*/
+		.section-title {
+			margin-bottom: 50px;
+		}
+
+		/* 07.2.4 Title-Excerpt White Box				 */
+		/* ----------------------------------------------*/
+		.title-excerpt {
+			padding: 20px;
+		}
+
+		/* 07.2.11 Banner Text				 			 */
+		/* ----------------------------------------------*/
+		.banner-text.small,
+		.banner-text.medium,
+		.banner-text.large {
+			padding: 0;
+		}
+
+		/*-----------------------------------------------*/
+		/* 07.2.13 Popup Template						 */
+		/*-----------------------------------------------*/
+		#popup-template #the-content {
+			padding-right: 30px;
+			padding-left: 30px;
+			text-align: center;
+		}
+
+		/*===============================================*/
+		/* 10 MASONRY GALLERY							 */
+		/*===============================================*/
+		.masonry-col, .grid-sizer {
+			width: 100% !important;
+			margin-bottom: 5% !important;
+		}
+
+		/* ----------------------------------------------*/
+		/* 12.1 Couple Section							 */
+		/* ----------------------------------------------*/
+		#couple {
+			padding: 60px 0 40px 0;
+		}
+
+		.couple-name {
+			font-size: 36px;
+			padding-top: 80px !important;
+			line-height: 38px;
+		}
+
+		.couple-excerpt {
+			margin-top: 20px;
+		}
+
+		/* ----------------------------------------------*/
+		/* 12.2 Location & Countdown Section			 */
+		/* ----------------------------------------------*/
+		#location-countdown .image-divider.auto-height {
+			padding: 60px 0;
+		}
+
+		#counting {
+			font-size: 55px;
+			line-height: 45px
+		}
+
+		#down {
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		.simple-countdown .countdown-amount {
+			font-size: 16px;
+		}
+
+		.simple-countdown .countdown-period {
+			font-size: 16px;
+		}
+
+		/* ----------------------------------------------*/
+		/* 12.3 The Wedding Section			 			 */
+		/* ----------------------------------------------*/
+		#the-wedding {
+			padding: 60px 0 40px 0;
+		}
+
+		/* ----------------------------------------------*/
+		/* 12.4 RSVP Section				 			 */
+		/* ----------------------------------------------*/
+		#rsvp {
+			padding: 60px 0;
+			background-color: #FFF
+		}
+
+		/*===============================================*/
+		/* 13 LOCATION PAGE								 */
+		/*===============================================*/
+		.interest-icon {
+			width: 20%;
+		}
+
+		.interest-blurb {
+			width: 78%;
+		}
+
+		/*===============================================*/
+		/* 14. ONEPAGE SECTION							 */
+		/*===============================================*/
+		/* ----------------------------------------------*/
+		/* 14.3 Our Story Section						 */
+		/* ----------------------------------------------*/
+		#our-story {
+			padding: 80px 0
+		}
+
+		#end-of-story {
+			margin-top: 50px;
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.4 Where When Section						 */
+		/* ----------------------------------------------*/
+		#where-when {
+			padding: 80px 0
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.5 Gallery Section							 */
+		/* ----------------------------------------------*/
+		#gallery-section {
+			padding: 80px 0
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.6 Don't Miss It / Countdown Section		 */
+		/* ----------------------------------------------*/
+		.circle-countdown .countdown-amount {
+			width: 45px;
+			height: 45px;
+			padding-top: 9px;
+			font-size: 20px;
+		}
+
+		.circle-countdown .countdown-period {
+			padding: 10px;
+			display: block;
+			text-align: center;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.7 More Events Section						 */
+		/* ----------------------------------------------*/
+		#more-events {
+			padding: 80px 0
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.8 Groomsmen Section						 */
+		/* ----------------------------------------------*/
+		#groomsmen-section {
+			padding: 80px 0
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.9 Bridesmaid Section						 */
+		/* ----------------------------------------------*/
+		#bridesmaid-section {
+			padding: 80px 0
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.10 Gift Section							 */
+		/* ----------------------------------------------*/
+		#gift-section {
+			padding: 80px 0;
+		}
+
+		/* ----------------------------------------------*/
+		/* 14.11 RSVP Section							 */
+		/* ----------------------------------------------*/
+		#rsvp-section {
+			padding: 80px 0
+		}
+
+	}
+
+
+	@media screen and (max-width: 320px) {
+		/* 06.5.6 Save The Date Title */
+		/* ----------------------------------------------*/
+		#save-the-date {
+			padding-right: 40px;
+			padding-top: 0;
+			margin-bottom: 0px;
+
+		}
+
+		#save {
+			font-size: 50px;
+			line-height: 30px
+		}
+
+		#the-date {
+			font-size: 40px;
+		}
+
+		#date {
+			font-size: 30px;
+			line-height: 20px;
+		}
+
+		/* ----------------------------------------------*/
+		/* 12.1 Couple Section							 */
+		/* ----------------------------------------------*/
+		.couple-name {
+			font-size: 30px;
+			padding-top: 70px !important;
+			line-height: 30px;
+		}
+
+		.couple-excerpt {
+			margin-top: 20px;
+
+		}
+
+		/* ----------------------------------------------*/
+		/* 12.5 Footer Section				 			 */
+		/* ----------------------------------------------*/
+		footer .image-divider.fixed-height {
+			height: 400px;
+		}
+
+		#thank-you {
+			text-align: center;
+			color: #FFF;
+			font-family: 'Pacifico';
+			-ms-transform: rotate(-10deg);
+			-webkit-transform: rotate(-10deg);
+			transform: rotate(-10deg);
+			padding-right: 30px;
+			margin-top: 40px;
+			margin-bottom: 25px;
+		}
+
+		#thank {
+			font-size: 45px;
+			line-height: 35px
+		}
+
+		#you {
+			font-size: 45px;
+			line-height: 35px;
+		}
+
+		#footer-couple-name {
+			font-family: 'Oswald', sans-serif;
+			font-size: 15px;
+			color: #FFF;
+			letter-spacing: 3px;
+			margin-top: 10px;
+		}
+	}
 }

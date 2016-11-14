@@ -1,6 +1,7 @@
 	
-	'use strict';	
-	
+	'use strict';
+
+
 	// CHECK WINDOW RESIZE
 	var is_windowresize = false;
 	$(window).resize(function(){
@@ -16,7 +17,7 @@
   		var mapOptions = {
     		zoom: 18,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(-12.046014, -77.030503),
+    		center: new google.maps.LatLng(-16.406850, -71.548202),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
@@ -54,17 +55,17 @@
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
 		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(-12.046014, -77.030503),
+       		position: new google.maps.LatLng(-16.406850, -71.548202),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
+         	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-taxi" style="color:#f0394d"></i></div>',
        		labelAnchor: new google.maps.Point(29, 20),
        		labelClass: "labels" // the CSS class for the label
      		});
     
-		var marker2 = new MarkerWithLabel({
+		/*var marker2 = new MarkerWithLabel({
        		position: new google.maps.LatLng(-12.046040, -77.029269),
        		draggable: false,
        		raiseOnDrag: false,
@@ -128,7 +129,7 @@
          	labelContent: '<div class="de-icon circle small-size" style="background-color:#0d9a48"><i class="de-icon-tree"></i></div>',
        		labelAnchor: new google.maps.Point(0, 0),
        		labelClass: "labels" // the CSS class for the label
-     		});			
+     		});			*/
     	//marker.setMap( map );
 		
 		
@@ -159,19 +160,19 @@
 
 		//ON MARKER CLICK EVENTS
 		//=======================================================================================
-  		/*google.maps.event.addListener(marker, 'click', function() {
+  		google.maps.event.addListener(marker, 'click', function() {
    	 		map.setZoom(17);
     		map.setCenter(marker.getPosition());
 			infowindow.open(map,marker);
-  		});*/
+  		});
 		
-		google.maps.event.addListener(marker1, 'click', function() {
+		/*google.maps.event.addListener(marker1, 'click', function() {
 			infowindow.open(map,marker1);
    	 		//map.setZoom(17);
     		//map.setCenter(marker.getPosition());			
   		});
 		
-		/*google.maps.event.addListener(marker2, 'click', function() {
+		google.maps.event.addListener(marker2, 'click', function() {
    	 		map.setZoom(17);
     		map.setCenter(marker.getPosition());
 			infowindow1.open(map,marker2);
