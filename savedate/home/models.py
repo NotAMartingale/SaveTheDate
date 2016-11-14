@@ -163,25 +163,6 @@ class FotoGaleria(models.Model):
 
 
 @register_snippet
-class ResumenLocalizacion(models.Model):
-    ceremoniaFoto = models.ForeignKey(
-        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
-    )
-    recepcionFoto = models.ForeignKey(
-        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
-    )
-    mensajeCeremonia = RichTextField(blank=True)
-    mensajeRecepcion = RichTextField(blank=True)
-
-    panels = [
-        ImageChooserPanel('ceremoniaFoto'),
-        ImageChooserPanel('recepcionFoto'),
-        FieldPanel('mensajeCeremonia', classname="full"),
-        FieldPanel('mensajeRecepcion', classname="full"),
-    ]
-
-
-@register_snippet
 class InfoNovios(models.Model):
     fotoNovio = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
@@ -242,44 +223,6 @@ class ListaNovios(models.Model):
 
 @register_snippet
 class Hoteles(models.Model):
-    foto = models.ForeignKey(
-        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
-    )
-    nombre = models.TextField()
-    direccion = models.TextField()
-    url = models.TextField()
-    descripcion = RichTextField(blank=True)
-
-    panels = [
-        ImageChooserPanel('foto'),
-        FieldPanel('nombre', classname= "full"),
-        FieldPanel('direccion', classname="full"),
-        FieldPanel('url', classname="full"),
-        FieldPanel('descripcion', classname="full"),
-    ]
-
-
-@register_snippet
-class Restaurants(models.Model):
-    foto = models.ForeignKey(
-        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
-    )
-    nombre = models.TextField()
-    direccion = models.TextField()
-    url = models.TextField()
-    descripcion = RichTextField(blank=True)
-
-    panels = [
-        ImageChooserPanel('foto'),
-        FieldPanel('nombre', classname= "full"),
-        FieldPanel('direccion', classname="full"),
-        FieldPanel('url', classname="full"),
-        FieldPanel('descripcion', classname="full"),
-    ]
-
-
-@register_snippet
-class Turismo(models.Model):
     foto = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
     )
