@@ -5,204 +5,105 @@
 {% load savedate_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
+{% block navStyle %} top-bar fluid-width block-color nav-center sticky-nav animation fadeInDown {% endblock %}
 
 {% block content %}
 
-    <!-- MAIN SLIDER -->
-    <section id="main-slider" class="fixed-height">
+    {% image self.imagenFondo width-1200 as localizacion_image %}
 
-        <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
-        <div class="slide-title-outter-wrapper">
 
-            <!-- MAIN SLIDER TITLE INNER WRAPPER -->
-            <div class="slide-title-inner-wrapper">
+<!-- MAIN SLIDER -->
+<section id="main-slider" class="fixed-height">
 
-                <!-- TITLE 1  -->
-                <div class="slide-title align-middle">
+    <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
+    <div class="slide-title-outter-wrapper">
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-2 col-md-8">
+        <!-- MAIN SLIDER TITLE INNER WRAPPER -->
+        <div class="slide-title-inner-wrapper">
 
-                                <div class="page-title">
+            <!-- TITLE 1  -->
+            <div class="slide-title align-middle">
 
-                                    <div style="padding-top:145px">
-                                        <h1 class="animation bounceInLeft">AT FOXEGAN HOTEL AND RESTAURANT</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-8">
 
-                                        <a href="#map-canvas" class="de-button outline medium animation delay1 bounceInRight smooth-scroll">
-                                            GET DIRECTION
-                                        </a>
-                                    </div>
+                            <div class="page-title">
 
+                                <div style="padding-top:145px">
+                                    <h1 class="animation bounceInLeft">{{ self.nombreCompleto |richtext }}</h1>
+
+                                    <a href="#location-map" class="de-button outline medium animation delay1 bounceInRight smooth-scroll">
+                                        OBTENER DIRECCIÓN
+                                    </a>
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
+                </div>
+
+            </div>
+
+        </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
+
+    </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
+
+    <!-- MAIN SLIDER IMAGES -->
+    <div class="slides">
+            <!-- SLIDE IMAGE -->
+            <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url({{ localizacion_image.url  }}); background-position:center bottom">
+            </div>
+
+            <div class="slide-overlay"> </div>
+    </div>	<!-- END of MAIN SLIDER IMAGES -->
+
+</section><!-- ENF of MAIN SLIDER -->
+
+<!--CONTENT SECTION-->
+<section id="content" style="padding: 120px 0;">
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- ROW-1 -->
+        <div class="row">
+
+            <div class="col-md-offset-1 col-md-5">
+
+                <div class="white-box-content-wrapper animation fadeInLeft">
+                    <h3>LOCALIZACIÓN CEREMONIA</h3>
+                    <span>Avenida San Jerónimo 513, Umacollo<br/><br/></span>
+                    {{ self.descripcionCeremonia |richtext }}
+
+                    {% image self.imagenCeremonia width-400 class="fullwidth"  %}
 
                 </div>
 
-            </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
+            </div>
 
-        </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
+            <div class="col-md-5">
 
-        <!-- MAIN SLIDER IMAGES -->
-        <div class="slides">
-                <!-- SLIDE IMAGE -->
-                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(http://placehold.it/1920x1080); background-position:center bottom">
+                <div class="white-box-content-wrapper animation fadeInRight">
+                    <h3>LOCALIZACIÓN RECEPCIÓN</h3>
+                    <span>Curva Chilina s/n, Alto Selva Alegre <br/><br/></span>
+                    {{ self.descripcionRecepcion |richtext }}
+                    {% image self.imagenRecepcion width-400 class="fullwidth"  %}
                 </div>
 
-                <div class="slide-overlay"> </div>
-        </div>	<!-- END of MAIN SLIDER IMAGES -->
+            </div>
 
-    </section><!-- ENF of MAIN SLIDER -->
-
-    <!--CONTENT SECTION-->
-    <section id="content">
-
-        <!-- CONTAINER -->
-        <div class="container">
-
-            <!-- ROW-1 -->
-            <div class="row">
-
-                <div class="col-md-offset-1 col-md-5">
-
-                    <div class="white-box-content-wrapper animation fadeInLeft">
-                        <h3>CEREMONY LOCATION</h3>
-                        <span>Foxegan Hotel, 2nd Floor, Room 8<br/><br/></span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam
-                        </p>
-                        <img src="http://placehold.it/600x400" alt="" class="fullwidth">
-                    </div>
-
-                </div>
-
-                <div class="col-md-5">
-
-                    <div class="white-box-content-wrapper animation fadeInRight">
-                        <h3>PARTY LOCATION</h3>
-                        <span>Foxegan Restaurant, 3nd Floor, Room 12<br/><br/></span>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam
-                        </p>
-                        <img src="http://placehold.it/600x400" alt="" class="fullwidth">
-                    </div>
-
-                </div>
-
-            </div><!--END of ROW-1-->
+        </div><!--END of ROW-1-->
 
 
+    </div> <!-- END of CONTAINER -->
 
-            <!-- ROW-2 -->
-            <div class="row">
+</section> <!--END of CONTENT SECTION-->
 
-                <div class="col-md-12 text-center animation fadeInUp" style="padding-top:70px; padding-bottom:100px">
-                    <h3>INTEREST PLACE AROUND</h3>
-                </div>
-
-            </div><!--END of ROW-2-->
-
-
-            <!-- ROW-3 -->
-            <div class="row">
-
-                <div class="col-md-offset-1 col-md-10">
-
-                    <!-- INTEREST AROUND ROW-1 -->
-                    <div class="row animation fadeIn">
-
-                        <div class="col-md-4 ">
-                            <div class="interest-icon">
-                                <div class="de-icon circle small-size" style="background-color:#6a6a6a">
-                                    <i class="de-icon-taxi"></i>
-                                </div>
-                            </div>
-                            <div class="interest-blurb">
-                                <span><strong>Taxi Station</strong></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="interest-icon">
-                                <div class="de-icon circle small-size" style="background-color:#67a80e">
-                                    <i class="de-icon-food"></i>
-                                </div>
-                            </div>
-                            <div class="interest-blurb">
-                                <span><strong>Delicious Cafe</strong></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="interest-icon">
-                                <div class="de-icon circle small-size" style="background-color:#c89d1b">
-                                    <i class="de-icon-coffee"></i>
-                                </div>
-                            </div>
-                            <div class="interest-blurb">
-                                <span><strong>Coffee Shop</strong></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- INTEREST AROUND ROW-2 -->
-                    <div class="row animation fadeIn">
-
-                        <div class="col-md-4">
-                            <div class="interest-icon">
-                                <div class="de-icon circle small-size" style="background-color:#f0394d">
-                                    <i class="de-icon-basket"></i>
-                                </div>
-                            </div>
-                            <div class="interest-blurb">
-                                <span><strong>Shopping Market</strong></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="interest-icon">
-                                <div class="de-icon circle small-size" style="background-color:#f6700e">
-                                    <i class="de-icon-paper-plane"></i>
-                                </div>
-                            </div>
-                            <div class="interest-blurb">
-                                <span><strong>Kid Toys Station</strong></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="interest-icon">
-                                <div class="de-icon circle small-size" style="background-color:#0d9a48">
-                                    <i class="de-icon-tree"></i>
-                                </div>
-                            </div>
-                            <div class="interest-blurb">
-                                <span><strong>Green Park</strong></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div><!--END of ROW-2-->
-
-        </div> <!-- END of CONTAINER -->
-
-    </section> <!--END of CONTENT SECTION-->
-
-    <footer>
-         <div id="map-canvas" style="height:550px; width:100%;"></div>
-    </footer>
-
-    <script type="text/javascript" src={%  static  "js/map-script.js" %}></script>
+<footer>
+    <iframe id="location-map" src="{{ self.localizacion_maps }}"
+            width=110% height=550px frameborder="0" style="border:0" allowfullscreen></iframe>
+</footer>
 
 {% endblock %}

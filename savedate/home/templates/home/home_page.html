@@ -6,6 +6,8 @@
 
 {% block body_class %}template-homepage{% endblock %}
 
+{% block navStyle %} top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown {% endblock %}
+
 {% block content %}
 
     {% image self.jumboImg1 width-1200 as jumbo_image1 %}
@@ -239,9 +241,6 @@
                                {{ self.mensajePareja |richtext }}
                             </p>
 
-                            <a href="../confirmacion" class="de-button medium animation fadeInUp">
-                                CONFIRMAR
-                            </a>
                         </div>
 
                     </div>
@@ -250,9 +249,6 @@
             </div>
 
         </section>
-
-
-
 
     </section>
 
@@ -286,7 +282,7 @@
                                 </div>
 
                                 <div id="footer-couple-name" class="animation delay1 fadeInUp">
-                                    José & Carla
+                                    CARLA & JOSÉ
                                 </div>
 
                             </div>

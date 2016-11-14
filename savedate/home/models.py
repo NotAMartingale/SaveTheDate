@@ -35,7 +35,7 @@ class HomePage(Page):
     )
     subpage_types = ['Localizacion',
                      'GaleriaFotos',
-                     'Confirmacion',
+                     'Acomodaciones',
                      'ListaNoviosPage',
                      ]
 
@@ -57,11 +57,24 @@ class Localizacion(Page):
     )
     nombreCompleto = RichTextField(blank=True)
     direccion = RichTextField(blank=True)
-
+    imagenCeremonia = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
+    )
+    descripcionCeremonia = RichTextField(blank=True)
+    imagenRecepcion = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
+    )
+    descripcionRecepcion = RichTextField(blank=True)
+    localizacion_maps = models.TextField(blank=True)
     content_panels = Page.content_panels + [
         ImageChooserPanel('imagenFondo'),
+        ImageChooserPanel('imagenCeremonia'),
+        FieldPanel('descripcionCeremonia', classname="full"),
+        ImageChooserPanel('imagenRecepcion'),
+        FieldPanel('descripcionRecepcion', classname="full"),
         FieldPanel('nombreCompleto', classname="full"),
         FieldPanel('direccion', classname="full"),
+        FieldPanel('localizacion_maps', classname="full"),
     ]
 
 
@@ -77,12 +90,14 @@ class GaleriaFotos(Page):
     ]
 
 
-class Confirmacion(Page):
+class Acomodaciones(Page):
     imagenHeader = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
     )
     mensajeBreve = models.TextField()
-    mensajeExtendido = RichTextField(blank=True)
+    mensajeHoteles = RichTextField(blank=True)
+    mensajeRestaurants = RichTextField(blank=True)
+    mensajeTurismo = RichTextField(blank=True)
     imagenFooter = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
     )
@@ -91,7 +106,9 @@ class Confirmacion(Page):
         ImageChooserPanel('imagenHeader'),
         ImageChooserPanel('imagenFooter'),
         FieldPanel('mensajeBreve', classname="full"),
-        FieldPanel('mensajeExtendido', classname="full"),
+        FieldPanel('mensajeHoteles', classname="full"),
+        FieldPanel('mensajeRestaurants', classname="full"),
+        FieldPanel('mensajeTurismo', classname="full"),
     ]
 
 
@@ -123,7 +140,7 @@ class CodigoListaNovio(models.Model):
     nombreCodigo = models.CharField(max_length=255)
     codigo = models.CharField(max_length=255)
 
-    content_panels = Page.content_panels + [
+    panels = [
         ImageChooserPanel('logoEmpresa'),
         FieldPanel('nombreEmpresa'),
         FieldPanel('descripcion', classname="full"),
@@ -139,7 +156,7 @@ class FotoGaleria(models.Model):
     )
     nombre = models.CharField(max_length=255)
 
-    content_panels = Page.content_panels + [
+    panels = [
         ImageChooserPanel('foto'),
         FieldPanel('nombre'),
     ]
@@ -219,5 +236,62 @@ class ListaNovios(models.Model):
 
     panels = [
         ImageChooserPanel('foto'),
+        FieldPanel('descripcion', classname="full"),
+    ]
+
+
+@register_snippet
+class Hoteles(models.Model):
+    foto = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
+    )
+    nombre = models.TextField()
+    direccion = models.TextField()
+    url = models.TextField()
+    descripcion = RichTextField(blank=True)
+
+    panels = [
+        ImageChooserPanel('foto'),
+        FieldPanel('nombre', classname= "full"),
+        FieldPanel('direccion', classname="full"),
+        FieldPanel('url', classname="full"),
+        FieldPanel('descripcion', classname="full"),
+    ]
+
+
+@register_snippet
+class Restaurants(models.Model):
+    foto = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
+    )
+    nombre = models.TextField()
+    direccion = models.TextField()
+    url = models.TextField()
+    descripcion = RichTextField(blank=True)
+
+    panels = [
+        ImageChooserPanel('foto'),
+        FieldPanel('nombre', classname= "full"),
+        FieldPanel('direccion', classname="full"),
+        FieldPanel('url', classname="full"),
+        FieldPanel('descripcion', classname="full"),
+    ]
+
+
+@register_snippet
+class Turismo(models.Model):
+    foto = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True, on_delete=models.SET_NULL, related_name='+'
+    )
+    nombre = models.TextField()
+    direccion = models.TextField()
+    url = models.TextField()
+    descripcion = RichTextField(blank=True)
+
+    panels = [
+        ImageChooserPanel('foto'),
+        FieldPanel('nombre', classname= "full"),
+        FieldPanel('direccion', classname="full"),
+        FieldPanel('url', classname="full"),
         FieldPanel('descripcion', classname="full"),
     ]

@@ -1,0 +1,29 @@
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+<div class="col-md-offset-1 col-md-10">
+
+
+    <div class="row" >
+
+        {% for codigo in codigos %}
+
+
+            <div class="col-md-offset-2 col-md-8 text-center animation fadeIn">
+                <h4>{{ codigo.nombreEmpresa }}</h4>
+                <p>{{ codigo.nombreCodigo }}: {{ codigo.codigo }}</p>
+                {{ self.mensajeExtendido |richtext }}
+                <div class="heart-divider">
+                    <span class="grey-line"></span>
+                    <i class="de-icon-heart pink-heart"></i>
+                    <i class="de-icon-heart grey-heart"></i>
+                    <span class="grey-line"></span>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+    </div> <!-- END of GIFT REGISTRY CAROUSEL -->
+
+</div>

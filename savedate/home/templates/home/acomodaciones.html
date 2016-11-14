@@ -13,7 +13,7 @@
 {% image self.imagenFooter width-1200 as imagenFooter %}
 
 <!-- MAIN SLIDER -->
-<section id="main-slider" class="fixed-height">
+<section id="main-slider" class="fixed-height" >
 
     <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
     <div class="slide-title-outter-wrapper">
@@ -29,7 +29,7 @@
                         <div class="col-md-offset-2 col-md-8">
 
                             <div class="page-title animation fadeInUp">
-                                <h1>LISTAS DE NOVIOS</h1>
+                                <h1>ESTADÍA</h1>
 
                                 <div class="heart-divider">
                                     <span class="white-line"></span>
@@ -41,11 +41,6 @@
                                 <p>
                                     {{ self.mensajeBreve }}
                                 </p>
-
-                                <a href="#content" class="smooth-scroll">
-                                    <i class="de-icon-down-open-big" style="font-size:40px; color:#FFF"></i>
-                                </a>
-
                             </div>
 
                         </div>
@@ -59,7 +54,7 @@
     </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
 
     <!-- MAIN SLIDER IMAGES -->
-    <div class="slides" >
+    <div class="slides">
             <!-- SLIDE IMAGE -->
             <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url({{ imagenHeader.url }});">
             </div>
@@ -69,35 +64,18 @@
 
 </section><!-- ENF of MAIN SLIDER -->
 
+
 <!--CONTENT SECTION-->
-<section id="content" style="padding: 50px 0;" >
+<section id="content" style="padding: 70px 0;">
 
-    <!-- CONTAINER -->
-    <div class="container">
-
-        <!-- ROW-1 -->
-        <div class="row">
-
-            {% codigos_novios %}
-
-        </div><!--END of ROW-1-->
-
-        <!-- ROW-2 -->
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8 text-center animation fadeIn">
-                <h3>APRECIAMOS MUCHOS SUS REGALOS Y COLABORACIONES.</h3>
-                {{ self.mensajeExtendido |richtext }}
-                <div class="heart-divider">
-                    <span class="grey-line"></span>
-                    <i class="de-icon-heart pink-heart"></i>
-                    <i class="de-icon-heart grey-heart"></i>
-                    <span class="grey-line"></span>
-                </div>
-                {% info_codigos_novios %}
-            </div>
+    <!-- ICON -->
+    <div class="icon-title">
+        <div class="de-icon circle light large-size aligncenter">
+            <i class="de-icon-home"></i>
         </div>
+    </div>
 
-    </div> <!-- END of CONTAINER -->
+    {% info_hoteles %}
 
 </section> <!--END of CONTENT SECTION-->
 
@@ -137,7 +115,6 @@
 
     </div>
 </footer><!-- END of FOOTER SECTION -->
-
 
 
 {% endblock %}

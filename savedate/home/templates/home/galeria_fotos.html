@@ -5,28 +5,31 @@
 {% load savedate_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
+{% block navStyle %} top-bar fluid-width block-color nav-center sticky-nav animation fadeInDown {% endblock %}
 
 {% block content %}
 
+{% image self.imagenFooter width-1000 as footer_image %}
+
 <!-- MAIN SLIDER -->
-<section id="main-slider" class="flexslider fixed-height">
+
+<section id="content" style="padding: 50px 0;">
+
+    <section id="main-slider" class="flexslider fixed-height">
 
     <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
     <div class="slide-title-outter-wrapper">
-
         <!-- MAIN SLIDER TITLE INNER WRAPPER -->
         <div class="slide-title-inner-wrapper">
 
             <!-- TITLE 1  -->
             <div class="slide-title align-bottom">
-
                 <div class="container">
                     <div class="row">
                         <div class="col-md-offset-3 col-md-6">
-
                             <div class="page-title">
 
-                                <h1>GALLERY</h1>
+                                <h1>GALERÍA</h1>
 
                                 <div class="heart-divider">
                                     <span class="white-line"></span>
@@ -34,55 +37,41 @@
                                     <i class="de-icon-heart white-heart"></i>
                                     <span class="white-line"></span>
                                 </div>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis
-                                </p>
-
+                                    {{ self.mensajeGaleria |richtext }}
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
-
     </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
 
     <!-- MAIN SLIDER IMAGES -->
 
     <ul class="slides">
-        <li>
-            <!-- SLIDE IMAGE -->
-            <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(http://placehold.it/1920x1080);">
-            </div>
-        </li>
-
-
-        <li>
-            <!-- SLIDE IMAGE -->
-            <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(http://placehold.it/1920x1080); background-position:center top">
-            </div>
-
-            <!-- SLIDE OVERLAY -->
-            <div class="slide-overlay" style="opacity:0"> </div>
-        </li>
-
-
+        {% slider_galeria %}
     </ul><!-- END of MAIN SLIDER IMAGES -->
-
 </section><!-- ENF of MAIN SLIDER -->
-
+</section>
 
 <!--CONTENT SECTION-->
 <section id="content">
 
-    <!-- CONTAINER -->
     <div class="container">
+        <h1 style="text-align: center">VIDEO PRE-BODA</h1>
 
+        <div align="center" class="embed-responsive embed-responsive-16by9">
+            <video controls class="embed-responsive-item">
+                <source id="preoboda" src="{% get_media_prefix %}video/preboda.mp4" type="video/mp4" >
+            </video>
+        </div>
+
+    </div>
+
+
+    <!-- CONTAINER -->
+    <div class="container" style="padding: 50px 0;">
+        <h1 style="text-align: center">GALERÍA DE FOTOS</h1>
         <!-- GALLERY -->
         <div class="row">
             <div class="col-md-offset-1 col-md-10">
@@ -96,368 +85,7 @@
                     <!-- MASONRY GUTTER SIZER -->
                     <div class="gutter-sizer"></div>
 
-                    <!-- GALLERY ITEM-1 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/500x750" class="magnific-zoom-gallery" title="Gallery-1">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-1 -->
-
-
-                    <!-- GALLERY ITEM-2 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x394" class="magnific-zoom-gallery" title="Gallery-2">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-2 -->
-
-
-                    <!-- GALLERY ITEM-3 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-3">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-3 -->
-
-
-                    <!-- GALLERY ITEM-4 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-4">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-4 -->
-
-
-
-                     <!-- GALLERY ITEM-5 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-5">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-5 -->
-
-
-
-                    <!-- GALLERY ITEM-6 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-6">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-6 -->
-
-
-                     <!-- GALLERY ITEM-7 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-7">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-7 -->
-
-
-                    <!-- GALLERY ITEM-8 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-8">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-8 -->
-
-
-                    <!-- GALLERY ITEM-9 -->
-                    <!-- ======================================================= -->
-                    <div class="masonry-col w33 animation fadeIn">
-
-                        <!--PHOTO-ITEM-->
-                        <div class="photo-item animation fadeIn">
-
-                            <!--PHOTO-->
-                            <img src="http://placehold.it/290x290" alt="" class="hover-animation image-zoom-in">
-
-                            <!--PHOTO OVERLAY-->
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-
-                            <!--ICON LINK-->
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-
-                                        <a href="http://placehold.it/700x467" class="magnific-zoom-gallery" title="Gallery-9">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-
-                                        <a href="attachment.html">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-link"></i>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div><!--END of ICON LINK-->
-
-                        </div><!--END of PHOTO-ITEM-->
-
-                    </div><!-- END of GALLERY ITEM-9 -->
-
-
+                    {% fotos_galeria %}
 
                 </div><!-- END of MASONRY-->
 
@@ -472,7 +100,7 @@
 
 <!-- FOOTER SECTION -->
 <footer>
-    <div class="image-divider fixed-height" style="background-image:url(http://placehold.it/1920x1080); height:400px;" data-stellar-background-ratio="0.5" >
+    <div class="image-divider fixed-height" style="background-image:url({{ footer_image.url }}); height:400px;" data-stellar-background-ratio="0.5" >
 
         <div class="divider-overlay" style="opacity:0.1"></div>
 
@@ -493,7 +121,7 @@
                             </div>
 
                             <div id="footer-couple-name" class="animation delay1 fadeInUp">
-                                GERRARD & DIANNE
+                                CARLA & JOSÉ
                             </div>
 
                         </div>

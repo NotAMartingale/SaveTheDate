@@ -1,0 +1,23 @@
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+<div class="container">
+
+{% for hotel in hoteles %}
+
+    <div class="row animation fadeIn" style="padding-bottom:60px">
+        <div class="col-md-offset-1 col-md-5 no-padding">
+            <div style="background-color:#FFF; padding:46px">
+                <h3><a href="{{ hotel.url }}">{{ hotel.nombre }}</a></h3>
+                <span>{{ hotel.direccion }}<br/><br/></span>
+                {{ hotel.descripcion |richtext }}
+            </div>
+        </div>
+        <div class="col-md-5 no-padding">
+            {% image hotel.foto fill-400x300 class="fullwidth"  %}
+        </div>
+    </div><!--END of TEXT SECTION-->
+
+{% endfor %}
+
+</div><!-- END of CONTAINER -->

@@ -1,0 +1,50 @@
+{% load wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+<div class="col-md-offset-1 col-md-10">
+
+    <!-- GIFT REGISTRY CAROUSEL -->
+    <div id="gift-registry" class="owl-carousel">
+
+        {% for codigo in codigos %}
+
+            <!-- ITEM-1 -->
+            <div class="item">
+
+
+
+            <!--PHOTO-ITEM-->
+            <div class="photo-item animation fadeIn">
+
+                <!--PHOTO-->
+                {% image codigo.logoEmpresa height-100 class="with-border" %}
+
+
+                <!--PHOTO OVERLAY-->
+                <div class="layer wh95 hidden-black-overlay hover-animation half-fade-in">
+                </div><!--END of PHOTO OVERLAY-->
+
+                 <!--ICON LINK-->
+                 <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                    <div class="alignment">
+                        <div class="v-align center-middle">
+
+                            <a class="de-button outline small">{{ codigo.nombreCodigo }}<br/>
+                                {{ codigo.codigo }}
+                            </a>
+
+                        </div>
+                    </div>
+                 </div><!--END of ICON LINK-->
+
+            </div><!--END of PHOTO-ITEM-->
+
+        </div> <!-- END of ITEM-1 -->
+
+
+        {% endfor %}
+
+
+    </div> <!-- END of GIFT REGISTRY CAROUSEL -->
+
+</div>
