@@ -1,11 +1,56 @@
 {% extends "base.html" %}
 
+{% load static wagtailuserbar %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+{% load savedate_tags %}
+
+
 {% block body_class %}template-404{% endblock %}
 
 {% block navStyle %} top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown {% endblock %}
 
 {% block content %}
-        <h1>Internal server error</h1>
 
-        <h2>Sorry, there seems to be an error. Please try again soon.</h2>
+    <section id="content" style="padding: 50px 0;">
+
+    <section id="main-slider" class="flexslider fixed-height">
+
+    <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
+    <div class="slide-title-outter-wrapper">
+        <!-- MAIN SLIDER TITLE INNER WRAPPER -->
+        <div class="slide-title-inner-wrapper">
+
+            <!-- TITLE 1  -->
+            <div class="slide-title align-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6">
+                            <div class="page-title">
+
+                                <h1>Ocurrió un error interno</h1>
+
+                                <div class="heart-divider">
+                                    <span class="white-line"></span>
+                                    <i class="de-icon-heart pink-heart"></i>
+                                    <i class="de-icon-heart white-heart"></i>
+                                    <span class="white-line"></span>
+                                </div>
+                                    <p>Lo sentimos, mientras tanto disfruta de nuestras fotos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
+    </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
+
+    <!-- MAIN SLIDER IMAGES -->
+
+    <ul class="slides">
+        {% slider_galeria %}
+    </ul><!-- END of MAIN SLIDER IMAGES -->
+</section><!-- ENF of MAIN SLIDER -->
+</section>
+
 {% endblock %}
